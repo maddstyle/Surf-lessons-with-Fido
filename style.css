@@ -1,4 +1,125 @@
-#Canvas {
-    border: 1px blue solid;
+/* #Canvas {
+    /* border: 1px blue solid; */
+/* padding: 0;
+    margin: auto;
+    display: block;
+    width: 1420px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}; */
+*/
+/* #start-button {
+    top: 50%;
+    font-size: 20px;
+    font-family: "DIN Alternate Bold";
+    background-color: #69129b;
+    padding: 20px 40px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } */
+
+/* #inital-text {
+    font-size: 20px;
+    font-family: "DIN Alternate Bold";
+    background-color: #251baf;
+    color: #fff;
+    padding: 20px 10px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } */
+.container1 {
+    /* position: absolute; */
+    width: 50vw;
+    height: 50vh;
 }
 
+.container1 .img1 {
+    width: 80%;
+    height: 80%;
+}
+
+.container2 .initial-text {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(155, 56, 56);
+}
+
+.container2 .btn1 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(61, 206, 138);
+    color: white;
+    font-size: 45px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container2 {
+    position: absolute;
+    width: 50%;
+}
+
+.container2 .img2 {
+    width: auto;
+    height: auto;
+}
+
+.container2 .lost {
+    position: absolute;
+    top: 20%;
+    left: 27%;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(155, 56, 56);
+}
+
+.container2 .btn2 {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(206, 61, 61);
+    color: white;
+    font-size: 45px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container2 .btn:hover {
+    background-color: black;
+}
+
+/* #tryAgain-button {
+    top: 50%;
+    font-size: 20px;
+    font-family: "DIN Alternate Bold";
+    color: #fff;
+    text-align: center;
+    background-color: #b82b0b;
+    color: rgb(2, 0, 0);
+    padding: 20px 40px;
+    border: 0;
+    display: inline-block;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } */
