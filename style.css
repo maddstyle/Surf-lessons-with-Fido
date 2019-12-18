@@ -19,26 +19,28 @@
 
 .container2 .text {
     position: absolute;
-    top: 60px;
-    left: 400px;
+    top: 5%;
+    left: 15%;
+    text-align: center;
     font-size: 55px;
     /* font-family: Arial, Helvetica, sans-serif; */
-    color: rgb(164, 37, 168);
+    color: rgb(57, 37, 168);
 }
 
 .container2 .btn1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 60%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: rgb(61, 206, 138);
+    background-color: rgb(187, 16, 59);
     color: white;
     font-size: 45px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.40rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
 
 .container2 {
@@ -67,8 +69,9 @@ a:-webkit-any-link {
 }
 
 .container2 .btn2 {
-
     display: inline-block;
+    top: 80%;
+    left: 50%;
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
@@ -77,21 +80,45 @@ a:-webkit-any-link {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 1px solid transparent;
+    border: 1px solid black;
     padding: 30px 50px;
     font-size: 2rem;
     /* line-height: 1.5; */
-
-    border-radius: .25rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: .40 rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     color: rgb(8, 8, 8) !important;
     background-color: #d65aad;
     position: absolute;
-    top: 15%;
-    left: 80%;
+
 }
 
-.container .btn2:hover {
+.container2 .btn3 {
+    display: inline-block;
+    top: 5%;
+    left: 70%;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid black;
+    padding: 30px 50px;
+    font-size: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /* line-height: 1.5; */
+
+    border-radius: .40rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: rgb(8, 8, 8) !important;
+    background-color: #d65aad;
+    position: absolute;
+
+}
+.btn1 .btn2 .btn3:hover {
     color: #fff;
     background-color: #c82333;
     border-color: #bd2130;

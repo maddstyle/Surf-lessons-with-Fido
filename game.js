@@ -2,8 +2,6 @@ class Game {
     constructor() {
         this.canvas = document.getElementById("Canvas");;
         this.ctx = this.canvas.getContext("2d");
-        this.canvas.width = window.innerWidth
-        this.canvas.height = window.innerHeight
         this.surfer = new Player(this, 0, 200, 150, 150);
         this.background = new Image();
         this.score = 0;
@@ -11,7 +9,6 @@ class Game {
         this.scrollValue = 0;
         this.speed = 1;
         this.sharks = [];
-
     }
 
     init() {
@@ -51,7 +48,7 @@ class Game {
                 }
             });
             this.score++;
-            this.ctx.font = "80px Arial";
+            this.ctx.font = "60px Arial";
             this.ctx.fillText("Score:" + Math.round(this.score / 60), 40, 100)
         }, 10);
     }
