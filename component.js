@@ -13,17 +13,17 @@ class Component {
   }
 
   getLeft() {
-    return this.x;
+    return this.x + 10;
   }
   getRight() {
-    return this.x + this.width - 30;
+    return this.x + this.width - 10;
   }
 
   getTop() {
-    return this.y + 30;
+    return this.y + 10;
   }
   getBottom() {
-    return this.y + this.height - 50;
+    return this.y + this.height - 10;
   }
 
   didCollide(otherComp) {
@@ -41,6 +41,16 @@ class Component {
     const crossBottom =
       otherComp.y + otherComp.height >= this.getTop() &&
       otherComp.y + otherComp.height <= this.getBottom();*/
+
+
+      // new way using circle collision....      
+      var dx = otherComp.x - this.x;
+      var dy = otherComp.y - this.y;
+      var distance = Math.sqrt(dx * dx + dy * dy);
+      var radius1 = 50;
+      var radius2 = 50;
+      return (distance < radius1 + radius2);
+   
 
     return ((otherComp.getTop() >= this.getTop() && otherComp.getTop() <= this.getBottom()) ||
         (otherComp.getBottom() >= this.getTop() && otherComp.getBottom() <= this.getBottom())) &&

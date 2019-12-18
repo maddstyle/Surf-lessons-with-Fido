@@ -1,40 +1,11 @@
-/* #Canvas {
-    /* border: 1px blue solid; */
-/* padding: 0;
-    margin: auto;
+/* canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    width: 1420px;
-    height: 800px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}; */
-*/
-/* #start-button {
-    top: 50%;
-    font-size: 20px;
-    font-family: "DIN Alternate Bold";
-    background-color: #69129b;
-    padding: 20px 40px;
-    border: 0;
-    box-shadow: 0;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  } */
-
-/* #inital-text {
-    font-size: 20px;
-    font-family: "DIN Alternate Bold";
-    background-color: #251baf;
-    color: #fff;
-    padding: 20px 10px;
-    border: 0;
-    box-shadow: 0;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  } */
+    width: 800px;
+} */
 .container1 {
     /* position: absolute; */
     width: 50vw;
@@ -46,19 +17,19 @@
     height: 80%;
 }
 
-.container2 .initial-text {
+.container2 .text {
     position: absolute;
-    top: 300px;
-    left: 200px;
+    top: 60px;
+    left: 400px;
     font-size: 55px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(155, 56, 56);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: rgb(164, 37, 168);
 }
 
 .container2 .btn1 {
     position: absolute;
-    top: 60%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: rgb(61, 206, 138);
@@ -82,44 +53,46 @@
 
 .container2 .lost {
     position: absolute;
-    top: 20%;
-    left: 27%;
+    top: 10%;
+    left: 40%;
     font-size: 55px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(155, 56, 56);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #fff;
+    text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+}
+
+a:-webkit-any-link {
+    color: #fff;
+    text-decoration: none;
 }
 
 .container2 .btn2 {
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgb(206, 61, 61);
-    color: white;
-    font-size: 45px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
-.container2 .btn:hover {
-    background-color: black;
-}
-
-/* #tryAgain-button {
-    top: 50%;
-    font-size: 20px;
-    font-family: "DIN Alternate Bold";
-    color: #fff;
-    text-align: center;
-    background-color: #b82b0b;
-    color: rgb(2, 0, 0);
-    padding: 20px 40px;
-    border: 0;
     display: inline-block;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border-radius: 5px;
-    margin-bottom: 20px;
-  } */
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 30px 50px;
+    font-size: 2rem;
+    /* line-height: 1.5; */
+
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: rgb(8, 8, 8) !important;
+    background-color: #d65aad;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+}
+
+.container .btn2:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}

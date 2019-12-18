@@ -2,7 +2,9 @@ class Game {
     constructor() {
         this.canvas = document.getElementById("Canvas");;
         this.ctx = this.canvas.getContext("2d");
-        this.surfer = new Player(this, 0, 200, 250, 200);
+        this.canvas.width = window.innerWidth
+        this.canvas.height = window.innerHeight
+        this.surfer = new Player(this, 0, 200, 150, 150);
         this.background = new Image();
         this.score = 0;
         this.surfer.img.src = "images/surferDog.png";
@@ -22,8 +24,6 @@ class Game {
     //     setInterval(updateCanvas, 20);
     // }
 
-
-
     start() {
         // this.drawBackground();
         // this.drawMainCharacters();
@@ -34,7 +34,7 @@ class Game {
             this.surfer.move();
 
 
-            if (this.score / 30 >= 80) {
+            if (this.score / 30 >= 90) {
                 clearInterval(interval);
                 this.youWin();
             }
@@ -48,14 +48,12 @@ class Game {
                 if (this.surfer.didCollide(shark)) {
                     clearInterval(interval);
                     this.gameOver();
-                    // console.log("collision");
-                    //alert("BOOM!!!!");
                 }
             });
             this.score++;
-            this.ctx.font = "100px Arial";
-            this.ctx.fillText("Score:" + Math.round(this.score / 30), 40, 100)
-        }, 8);
+            this.ctx.font = "80px Arial";
+            this.ctx.fillText("Score:" + Math.round(this.score / 60), 40, 100)
+        }, 10);
     }
     drawMainCharacters() {
         this.surfer.drawComponent("images/surferDog.png");
@@ -63,12 +61,15 @@ class Game {
 
 
     createShark() {
+        let sharkWidth = 150;
+        let sharkHeight = 150;
         this.sharks.push(
-            new Component(this, 1420, 300 + Math.floor(Math.random() * 400), 250, 200)
+            new Component(this, 1420, 150 + Math.floor(Math.random() * 400), sharkWidth, sharkHeight)
         );
+
         setTimeout(() => {
             this.createShark();
-        }, 1400);
+        }, 3000);
     };
     // drawBackground() {
     //     this.background.drawComponent("images/surf-background.jpg");
@@ -89,6 +90,7 @@ class Game {
         if (this.scrollValue >= 1420) {
             this.scrollValue = 0;
         }
+
         let render = () => {
             this.ctx.clearRect(1420, 800, this.canvas.width, this.canvas.height);
             this.ctx.drawImage(
@@ -101,7 +103,6 @@ class Game {
         render();
         this.drawMainCharacters();
         this.surfer.move();
-        // this.shark.x -= 1;
     }
 
     clear() {
