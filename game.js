@@ -61,7 +61,7 @@ class Game {
         let sharkWidth = 150;
         let sharkHeight = 150;
         this.sharks.push(
-            new Component(this, 1420, 150 + Math.floor(Math.random() * 400), sharkWidth, sharkHeight)
+            new Component(this, 1420, 200 + Math.floor(Math.random() * 400), sharkWidth, sharkHeight)
         );
 
         setTimeout(() => {

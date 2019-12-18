@@ -118,8 +118,3 @@ a:-webkit-any-link {
     position: absolute;
 
 }
-.btn1 .btn2 .btn3:hover {
-    color: #fff;
-    background-color: #c82333;
-    border-color: #bd2130;
-}
