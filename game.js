@@ -107,11 +107,11 @@ class Game {
     }
 
     youWin = () => {
-        location = "/you-win.html";
+        location = "/Surf-lessons-with-Fido/you-win.html";
     }
 
     gameOver = () => {
-        location = "/game-over.html";
+        location = "/Surf-lessons-with-Fido/game-over.html";
     }
 }
 // gameOver() {
